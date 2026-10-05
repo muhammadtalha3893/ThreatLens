@@ -20,7 +20,7 @@ A web-based cybersecurity threat analysis and security assessment platform for *
 
 <div align="center">
 
-![ThreatLens Dashboard](screenshot/sc1.jpg)
+![ThreatLens Dashboard](screenshots/sc1.jpg)
 
 </div>
 
