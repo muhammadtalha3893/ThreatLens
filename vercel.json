@@ -1,0 +1,24 @@
+{
+  "functions": {
+    "api/hunt.js": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://ipwho.is https://ipinfo.io https://geolocation-db.com https://api.ipify.org https://cloudflare-dns.com https://observatory-api.mdn.mozilla.net https://api.github.com https://gitlab.com https://api.bitbucket.org https://codeberg.org https://dev.to https://keybase.io https://hacker-news.firebaseio.com https://mastodon.social https://public.api.bsky.app https://graphql.anilist.co https://api.stackexchange.com https://api.chess.com; frame-src https://www.openstreetmap.org; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+        },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=()" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
+        { "key": "X-XSS-Protection", "value": "0" }
+      ]
+    }
+  ]
+}
